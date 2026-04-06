@@ -98,8 +98,11 @@ const reset=()=>{
 const endQuiz=()=>{
     
     document.querySelector(".box").innerHTML=`
+    <div class="result">
     <h3>Thank you for playing the Quiz</h3>
-    <h2>${right} / ${total}</h2>`
+    <h2>${right} / ${total} is correct</h2><br/>
+    <p>Right=${right} & Wrong=${wrong}</p>
+    </div>`
     
 }
 loadQuestions();
